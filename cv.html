@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Phonk Website</title>
+    <link rel="stylesheet" href="cvstyles.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="homepageup.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li style="border-bottom: 1px solid #a6ff00;"><a href="cv.html">CV</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <section class="cv-container">
+        <header class="header">
+          <h1>Welcome to My CV</h1>
+        </header>
+    
+        <section class="profile">
+          <div class="photo-container">
+            <img src="pic.jpg" alt="Your Photo">
+          </div>
+          <h2>Pitambar Lamichhane</h2>
+          <p>"I am a passionate tech enthusiast, aspiring to make a significant impact in<br>
+             the world of innovation and technology. With a keen interest in programming, <br>
+             robotics, and hacking, I am always exploring new ways to create solutions that <br>
+             push the boundaries of what's possible. Outside of tech, I’m a strong debater and <br>
+             a natural leader, always striving for excellence in everything I do.<br>
+              My goal is to combine my skills and vision to shape the future and create a positive, lasting change."<br>
+
+          </p>
+        </section>
+    
+        <section class="personal-details">
+          <table>
+            <tr>
+              <td><strong>Date of Birth:</strong></td>
+              <td>01 January 1990</td>
+            </tr>
+            <tr>
+              <td><strong>Education:</strong></td>
+              <td>Grade 11, St. Xavier's College</td>
+            </tr>
+            <tr>
+              <td><strong>Skills:</strong></td>
+              <td>Programming, Robotics, Debating</td>
+            </tr>
+            <tr>
+              <td><strong>Hobbies:</strong></td>
+              <td>Gaming, Hiking, Reading</td>
+            </tr>
+          </table>
+        </section>
+    
+        <section class="creations">
+          <h3>My Creations</h3>
+          <button onclick="goToCreation('1')">Creation 1</button>
+          <button onclick="goToCreation('2')">Creation 2</button>
+          <button onclick="goToCreation('3')">Creation 3</button>
+        </section>
+    
+        <footer>
+          <div class="social-media">
+            <a href="https://facebook.com" target="_blank">
+              <img src="fb.webp" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <img src="insta.webp" alt="Instagram">
+            </a>
+          </div>
+          <p>&copy; 2025 Pitambar Lamichhane. All Rights Reserved.</p>
+        </footer>
+      </section>
+    
+      <script src="cvscript.js"></script>
+    </body>
+    </html>

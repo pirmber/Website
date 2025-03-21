@@ -1,0 +1,311 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-image: url('background-image.jpg'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cv-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    color: neon;
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow;
+  }
+  
+  .profile {
+    margin-top: 20px;
+  }
+  
+  .photo-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid yellow;
+    box-shadow: 0 0 15px yellow;
+  }
+  
+  .profile h2 {
+    font-size: 2rem;
+    color: yellow;
+  }
+  
+  .profile p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .personal-details table {
+    width: 80%;
+    margin: 20px auto;
+    color: white;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  
+  .personal-details td {
+    padding: 10px;
+    border: 1px solid yellow;
+  }
+  
+  .creations button {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .creations button:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.1);
+  }
+  
+  footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: yellow;
+  }
+  
+  .social-media {
+    margin-bottom: 10px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Neon effect */
+  @keyframes neon {
+    0% { text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; }
+    50% { text-shadow: 0 0 20px yellow, 0 0 40px yellow, 0 0 50px yellow; }
+    100% { text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; }
+  }
+  
+  header h1 {
+    animation: neon 1.5s infinite alternate;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+  body {
+      background-color: black;
+      color: #fbfbfb;
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.35s ease-in-out forwards;
+  }
+  
+  nav ul li a.hover {
+      border-bottom: 3px solid #ffffff;  /* Line under active link */
+  }
+  .video-container {
+      width: 100%;
+      height: 300px;  
+      overflow: hidden;
+  }
+  
+  .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  nav {
+      background: #000000;
+      text-align: center;
+      padding: 15px 0;
+  }
+  
+  nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  nav ul li {
+      display: inline;
+      margin: 0 20px;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  nav ul li a:hover, nav ul li a:active {
+      color: #ff1493;
+      text-shadow: 0px 0px 10px #ff1493;
+      transform: translateY(-3px);
+  }
+  
+  
+  .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+  }
+  
+  .text {
+      width: 60%;
+      font-size: 22px;
+  }
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }.content, .video-container, nav, footer {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  .video-container { animation-delay: 0.3s; }
+  nav { animation-delay: 0.6s; }
+  .content { animation-delay: 0.9s; }
+  footer { animation-delay: 1.2s; }
+  
+  .blog-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .header h1 {
+    font-size: 3.5rem;
+    color: #ffea00;
+    text-shadow: 0 0 5px #ffea00, 0 0 20px #ffea00;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .blog-posts .blog {
+    background: #1c1c1c;
+    border-left: 6px solid #ffea00;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 234, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-posts .blog:hover {
+    transform: scale(1.02);
+  }
+  
+  .blog h2 {
+    color: #ffea00;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .blog p {
+    color: #ddd;
+    font-size: 1.1rem;
+  }
+  
+  .blog img {
+    width: 300px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 234, 0, 0.2);
+  }
+  
+  .videos h2,
+  .website-links h2 {
+    color: #ffea00;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .video-containerb {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .video-containerb iframe {
+    width: 100%;
+    height: 220px;
+    border: 2px solid #ffea00;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 234, 0, 0.3);
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    background-color: #111;
+    padding: 1.5rem;
+    border: 2px solid #ffea00;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(255, 234, 0, 0.2);
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background: #222;
+  }
+  
+  .card h3 {
+    color: #ffea00;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    color: #ccc;
+  }
+  
+  footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+  }
