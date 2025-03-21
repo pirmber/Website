@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechX EDU</title>
+  <link rel="stylesheet" href="syllabus.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>TechX EDU</h2>
+    <div class="unit">
+      <h3 onclick="toggleUnit('unit1')">Unit 1: Basics</h3>
+      <div class="chapter-list" id="unit1">
+        <div class="chapter" onclick="loadContent('chapter1')">Intro to Tech</div>
+        <div class="chapter" onclick="loadContent('chapter2')">History of Tech</div>
+        <div class="chapter" onclick="loadContent('chapter3')">Future Vision</div>
+      </div>
+    </div>
+    <div class="unit">
+      <h3 onclick="toggleUnit('unit2')">Unit 2: Coding</h3>
+      <div class="chapter-list" id="unit2">
+        <div class="chapter" onclick="loadContent('chapter4')">HTML & CSS</div>
+        <div class="chapter" onclick="loadContent('chapter5')">JS Basics</div>
+        <div class="chapter" onclick="loadContent('chapter6')">Projects</div>
+      </div>
+    </div>
+    <div class="unit">
+      <h3 onclick="toggleUnit('unit3')">Unit 3: AI</h3>
+      <div class="chapter-list" id="unit3">
+        <div class="chapter" onclick="loadContent('chapter7')">AI Overview</div>
+        <div class="chapter" onclick="loadContent('chapter8')">Machine Learning</div>
+        <div class="chapter" onclick="loadContent('chapter9')">AI in Real Life</div>
+      </div>
+    </div>
+    <div class="unit">
+      <h3 onclick="toggleUnit('unit4')">Unit 4: Cyber</h3>
+      <div class="chapter-list" id="unit4">
+        <div class="chapter" onclick="loadContent('chapter10')">Hacking</div>
+        <div class="chapter" onclick="loadContent('chapter11')">Security Layers</div>
+        <div class="chapter" onclick="loadContent('chapter12')">Preventive Steps</div>
+      </div>
+    </div>
+    <div class="unit">
+      <h3 onclick="toggleUnit('unit5')">Unit 5: Future</h3>
+      <div class="chapter-list" id="unit5">
+        <div class="chapter" onclick="loadContent('chapter13')">Space Tech</div>
+        <div class="chapter" onclick="loadContent('chapter14')">Robotics</div>
+        <div class="chapter" onclick="loadContent('chapter15')">Smart World</div>
+      </div>
+    </div>
+    <div class="unit">
+        <h3 onclick="toggleUnit('unit6')">Unit 6: Cloud Computing</h3>
+        <div class="chapter-list" id="unit6">
+          <div class="chapter" onclick="loadContent('chapter16')">Introduction to Cloud</div>
+          <div class="chapter" onclick="loadContent('chapter17')">Cloud Storage</div>
+          <div class="chapter" onclick="loadContent('chapter18')">Cloud Security</div>
+        </div>
+      </div>
+      
+      <div class="unit">
+        <h3 onclick="toggleUnit('unit7')">Unit 7: Blockchain</h3>
+        <div class="chapter-list" id="unit7">
+          <div class="chapter" onclick="loadContent('chapter19')">Introduction to Blockchain</div>
+          <div class="chapter" onclick="loadContent('chapter20')">Cryptocurrency</div>
+          <div class="chapter" onclick="loadContent('chapter21')">Blockchain in Finance</div>
+        </div>
+      </div>
+      
+      <div class="unit">
+        <h3 onclick="toggleUnit('unit8')">Unit 8: IoT (Internet of Things)</h3>
+        <div class="chapter-list" id="unit8">
+          <div class="chapter" onclick="loadContent('chapter22')">What is IoT?</div>
+          <div class="chapter" onclick="loadContent('chapter23')">Applications of IoT</div>
+          <div class="chapter" onclick="loadContent('chapter24')">IoT in Smart Homes</div>
+        </div>
+      </div>
+  </div>
+
+  <div class="main-content">
+    <a href="index.html" class="return-button">⟵ Return to Home</a>
+    <div id="content-area">
+      <div class="card">
+        <h1>Welcome to TechX EDU</h1>
+        <h1>Select a unit and chapter from the sidebar to begin exploring awesome tech content.</h1>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="syllabus.js"></script>
+</body>
+</html>
